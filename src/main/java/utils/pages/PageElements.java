@@ -3,12 +3,10 @@ package utils.pages;
 import org.openqa.selenium.By;
 
 public class PageElements {
+    public static By btnAcceptCookies = By.xpath("//div[@id='cookiesBar']/button[@class='cookie-close abs cookiesBarClose']");
+    public static By imobiliarePage = By.xpath("//a[@data-id='3']/span[text()='Imobiliare']");
+    public static By categoryApartamenteDeVanzare = By.xpath("//*[@id='bottom3']/ul/li[1]/a");
+    public static By category3Rooms = By.xpath("//div[@id='topLink']/div/ul[3]/li[1]/a");
+    public static By inputLocation = By.id("cityField");
 
-    public static By homePage = By.xpath("//div[@class=\"maincategories\"]");
-    public static By imobiliarePage = By.xpath("a[href*='://imobiliare']");
-    public static By categoryApartamenteDeInchiriat = By.xpath("//*[@id=\"bottom3\"]/ul/li[2]/a");
-    public static By categoryRooms = By.id("subSelect909");
-    public static By category3Rooms = By.xpath("//*[@id=\"param_subcat\"]/div[2]/ul/li[4]/a");
-    public static By promotedOffersTable = By.xpath("//table[@class=\"fixed offers breakword offers--top redesigned\"]");
-    public static By offersTable = By.id("offers_table");
 }
