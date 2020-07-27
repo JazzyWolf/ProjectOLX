@@ -5,7 +5,7 @@ import utils.pages.PageElements;
 public class FirstTest {
 
     @Test
-    public void showSpecificAds() {
+    public void showSpecificAds() throws InterruptedException {
         // Step 1: Start driver and access link
         CommonFunctions.openLink();
         // Step 1.2: Accept cookies
@@ -21,6 +21,7 @@ public class FirstTest {
         CommonFunctions.filterByCounty("Cluj");
         CommonFunctions.filterByCity("Cluj-Napoca");
         // Step 6: Open first ad
+        CommonFunctions.listAllHrefElements();
         //CommonFunctions.quitBrowser();
     }
 
