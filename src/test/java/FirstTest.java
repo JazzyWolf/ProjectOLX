@@ -21,7 +21,7 @@ public class FirstTest {
         CommonFunctions.filterByCounty("Cluj");
         CommonFunctions.filterByCity("Cluj-Napoca");
         // Step 6: Open first ad
-        CommonFunctions.quitBrowser();
+        //CommonFunctions.quitBrowser();
     }
 
 }
