@@ -1,3 +1,4 @@
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import utils.functions.CommonFunctions;
 import utils.pages.PageElements;
@@ -21,7 +22,22 @@ public class FirstTest {
         CommonFunctions.filterByCounty("Cluj");
         CommonFunctions.filterByCity("Cluj-Napoca");
         // Step 6: Open first ad
-        CommonFunctions.listAllHrefElements();
+        // CommonFunctions.listAllHrefElements();
+
+        // ------------------
+        // Purely for testing if Price and Square Meters are found
+        // First link is opened
+        JavascriptExecutor js = (JavascriptExecutor) CommonFunctions.driver;
+        js.executeScript("window.scrollBy(0,1000)");
+        // Open first link
+        CommonFunctions.generalClickPageElement(PageElements.firstAd);
+        // Get Price
+        PageElements.getPrice();
+        // Get Square Meters
+        PageElements.getSquareMeters();
+        // ---------------
+
+        // Quit browser
         //CommonFunctions.quitBrowser();
     }
 
